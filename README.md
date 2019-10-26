@@ -14,7 +14,7 @@ User also has the mechanism of adding and removing Yelp pages to a favorites pag
 
 ## Gif Walk Through
 
-<a href = "https://user-images.githubusercontent.com/43256526/67610098-6a50e000-f745-11e9-8103-78fcd7171288.gif"><img src="https://user-images.githubusercontent.com/43256526/67610098-6a50e000-f745-11e9-8103-78fcd7171288.gif"/></a>
+<a href = "https://user-images.githubusercontent.com/43256526/67623549-7a1b0380-f7db-11e9-85ed-909281b8f846.gif"><img src="https://user-images.githubusercontent.com/43256526/67623549-7a1b0380-f7db-11e9-85ed-909281b8f846.gif"/></a>
 
 ## Adding API Keys
 
