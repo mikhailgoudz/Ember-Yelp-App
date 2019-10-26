@@ -2,14 +2,13 @@
 
 Author: Mikhail Goudz
 
-A project utilizing the Yelp API allowing the users to search for businesses with 3 of the following facets (term, location, and price). The search then routes the user to a details page showing helpful information about the business such as the Yelp rating, phone number, etc.. 
-User can also see the business loaction on Google Maps (done using the Google Maps API).
-User also has the mechanism of adding and removing Yelp pages to a favorites page.
+A project utilizing the Yelp API via GraphQL. The project opens with an index page promoting the user to search for businesses with 3 of the following facets (term, location, and price). The search then displays buisnessess meating the criteria allowing the user to click the business name which then routes them to a details page. The details page shows the business info such as phone number, yelp rating, etc.. The details page also shows the business location on google maps done by utilizing the Google Maps API. User also has the mechansim of adding or removing  businesses to a favorites page which will be stored in googles FireBase Database.
+
 
 ## Time Spent
 
 * class time and rewatching lecture video uploaded by the instructer : 8 Hours
-* coding required stories : 4-5 Hours
+* coding required stories : 5-6 Hours
 * Optionals and extras : 1 Hour
 
 ## Gif Walk Through
