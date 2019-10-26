@@ -1,0 +1,45 @@
+
+<div class="background">
+
+<div id = "showcase">
+ <h1>Yelpow Pages</h1>
+</div>
+
+<div>
+
+
+
+
+<Input @value={{term}} @placeholder="Enter term here" />
+<Input @value={{location}} @placeholder="Enter location here" />
+<Input @value={{price}} @placeholder="Enter price here" />
+
+</div>
+
+<div class = "mt-4">
+<ul class = "lis-group container">
+  {{#each model.business as |business|}}
+  <li class = "list-group-item list-group-item-warning"><LinkTo @route='details' @model={{business.id}}>{{business.name}}</LinkTo></li>
+  {{/each}}
+</ul>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+{{!-- {{model.id}}
+
+
+{{model.alias}}
+{{model.url}} --}}
+
+
+
+
+{{outlet}}

@@ -1,0 +1,13 @@
+query search($term: String!,$location: String!,$price: String){
+  search(term: $term,
+        price: $price,
+        location: $location
+        limit: 5) {
+      total
+      business {
+          name
+          id
+          url
+      }
+  }
+}
