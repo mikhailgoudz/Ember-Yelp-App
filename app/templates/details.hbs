@@ -1,0 +1,62 @@
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+<h2 class = "d-flex justify-content-center mt-5">{{model.business.name}}</h2>
+
+    
+  </div>
+</div>
+
+   
+
+<div class="d-flex justify-content-center mt-5">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src={{model.business.photos}} alt="Card image cap">
+    <div class="card-body">
+      
+
+      <ul class="list-group">
+
+        <li class="list-group-item"><b>Phone : </b>{{model.business.display_phone}}</li>
+        <li class="list-group-item"><b>Rating:</b> {{model.business.rating}} Stars out of {{model.business.review_count}} reviews</li>
+        <li class="list-group-item"><a href={{model.business.url}}>Yelp Page</a></li>
+       
+
+
+{{#if model.favorite}}
+  <li class="list-group-item"><button class = "btn btn-primary" {{action 'unsave'}}>Remove From Favorites</button></li>
+  {{else}}
+   <li class="list-group-item"><button class = "btn btn-primary" {{action 'save'}}>Add To Favorites</button></li>
+  {{/if}}
+       
+
+         
+  
+      </ul>
+
+
+    </div>
+  </div>
+
+</div>
+<div class = "d-flex justify-content-center mt-5">
+{{#g-map lat=model.business.coordinates.latitude lng=model.business.coordinates.longitude zoom=20 as |g|}}
+{{g.marker
+  lat=model.business.coordinates.latitude
+  lng=model.business.coordinates.longitude 
+  draggable=false
+  }}
+{{/g-map}}
+
+</div>
+
+
+
+
+
+
+
+
+
+
+{{outlet}}

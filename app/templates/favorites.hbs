@@ -1,0 +1,25 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+<h2 class = "d-flex justify-content-center mt-5">Favorites</h2>
+
+    
+  </div>
+</div>
+
+   
+   <div class="d-flex justify-content-center mt-5">
+<ol class = "list-group">
+    {{#each model as |favorite|}}
+    <li class ="results list-group-item list-group-item-success"><LinkTo @route ="details" @model={{favorite.yelpid}}>{{favorite.name}}</LinkTo></li>
+    {{else}}
+    <li>
+        no favorites
+    </li>
+    {{/each}}
+</ol>
+</div>
+
+
+
+
+{{outlet}}
