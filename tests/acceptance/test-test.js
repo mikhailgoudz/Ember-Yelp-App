@@ -9,7 +9,7 @@ import sinon from 'sinon';
 // import EmberObject from '@ember/object';
 // ember test --server
 // 
-module('Acceptance | main restaurant search page', function(hooks) {
+module('Acceptance | main yelp search page', function(hooks) {
   let sandbox = sinon.createSandbox();
   setupApplicationTest(hooks);
   hooks.after(function() {
